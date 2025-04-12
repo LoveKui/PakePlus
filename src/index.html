@@ -1,22 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus App</title>
-        <script type="module" src="/main.js" defer></script>
-    </head>
 
-    <body>
-        <main class="container">
-            <h1>Welcome to PakePlus</h1>
+<head>
+  <meta name="app-info" content="{'name':'dukmap-vite','version':'0.0.0','buildTime':'2025-04-12 12:06:06','commitHash':'e99eb03','describe':'e99eb03','branch':'master','buildUser':'LoveKui'}">
 
-            <form class="row" id="greet-form">
-                <input id="greet-input" placeholder="Enter a name..." />
-                <button type="submit">Greet</button>
-            </form>
-            <p id="greet-msg"></p>
-        </main>
-    </body>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>标注管理</title>
+
+
+  <link rel="stylesheet" href="/lib/Cesium/Widgets/widgets.css">
+  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+  <!-- <script   src="/lib/Cesium/Cesium.js" ></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-size: 1.25vw;
+    }
+
+    /* HTML: <div class="loader"></div> */
+    .loader {
+      --d: 1.14583vw;
+      width: 0.20833vw;
+      height: 0.20833vw;
+      border-radius: 50%;
+      color: #25b09b;
+      box-shadow:
+        calc(1*var(--d)) calc(0*var(--d)) 0 0,
+        calc(0.707*var(--d)) calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d)) calc(1*var(--d)) 0 0.10417vw,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 0.15625vw,
+        calc(-1*var(--d)) calc(0*var(--d)) 0 0.20833vw,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 0.26042vw,
+        calc(0*var(--d)) calc(-1*var(--d)) 0 0.3125vw;
+      animation: l27 1s infinite steps(8);
+    }
+
+    @keyframes l27 {
+      100% {
+        transform: rotate(1turn)
+      }
+    }
+  </style>
+
+  <script type="module" crossorigin src="/assets/index-zBTZL7OJ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D65cLnxz.css">
+</head>
+
+<body>
+  <!-- <div id="loading">
+    <div class="loader">
+    </div>
+
+  </div> -->
+
+  <div id="root"></div>
+  <script  src="/scripts/loading.js" ></script>
+
+</body>
+
 </html>
