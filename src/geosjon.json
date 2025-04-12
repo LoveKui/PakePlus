@@ -1,0 +1,49 @@
+{
+    "type": "FeatureCollection",
+    "layer": {
+        "id": "M-C91E06B6-AF6F-4DB3-8237-1F036F8F89C9",
+        "name": ""
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "文字",
+                "type": "label",
+                "group": "注记",
+                "id": "M-6A0F82DF-6EEB-4380-ADB8-C8B1B950DD0F",
+                "style": {
+                    "text": "Mars3D三维可视化平台",
+                    "color": "#00fff2",
+                    "font_size": 40,
+                    "font_family": "楷体",
+                    "font_weight": "normal",
+                    "font_style": "normal",
+                    "opacity": 1,
+                    "outline": true,
+                    "outlineColor": "#000000",
+                    "outlineOpacity": 0.6,
+                    "outlineWidth": 3,
+                    "backgroundColor": "#000000",
+                    "backgroundOpacity": 0.5,
+                    "backgroundPadding": 5,
+                    "scaleByDistance_far": 1000000,
+                    "scaleByDistance_farValue": 0.1,
+                    "scaleByDistance_near": 1000,
+                    "scaleByDistance_nearValue": 1,
+                    "distanceDisplayCondition_far": 100000,
+                    "visibleDepth": true,
+                    "materialType": "Color"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    116.314081,
+                    31.004389,
+                    1173.5
+                ]
+            }
+        }
+    ]
+}
